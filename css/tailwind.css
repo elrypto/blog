@@ -1,0 +1,17 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+
+h1 {
+  @apply text-3xl text-cool-gray-400;
+}
+
+h2 {
+  @apply text-2xl text-cool-gray-500;
+}
+
+body {
+  @apply text-cool-gray-400;
+}
