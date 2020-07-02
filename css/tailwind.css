@@ -1,17 +1,8 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind base;
 
-
-
-h1 {
-  @apply text-3xl text-cool-gray-400;
+html{
+  @apply font-sans antialiased text-black bg-cool-gray-100;
 }
 
-h2 {
-  @apply text-2xl text-cool-gray-500;
-}
-
-body {
-  @apply text-cool-gray-400;
-}
+@tailwind components;
+@tailwind utilities;

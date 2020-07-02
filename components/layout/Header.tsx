@@ -1,14 +1,9 @@
-import { useRouter } from 'next/dist/client/router';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
 const Header = () => {
-  const router = useRouter();
-
-
   return (
     <header className="flex">
-      <Link href='/'>
+      <Link href="/">
         <a className="px-2 py-1 bg-gray-800 text-cool-gray-600 hover:text-cool-gray-500">
           elrypto.dev
         </a>
@@ -20,8 +15,8 @@ const Header = () => {
           <div className="relative w-64" />
         </div>
       </div>
-    </header >
-  )
-}
+    </header>
+  );
+};
 
 export default Header;

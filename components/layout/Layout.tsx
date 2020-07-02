@@ -1,16 +1,17 @@
-import React from 'react'
-import { ToastContainer } from 'react-toastify'
-import Header from './Header'
-import { Footer } from './Footer';
+import React from 'react';
+import Header from './Header';
 
+interface Props {
+  children: React.ReactNode;
+}
 
-export const Layout = ({ children }: React.HTMLAttributes<HTMLDivElement>) => (
-  <>
-    <Header />
-    <ToastContainer />
-    <div className="max-w-screen-xl m-auto">
-      {children}
-    </div>
-  </>
-)
+const Layout: React.FC<Props> = ({ children }) => {
+  return (
+    <>
+      <Header />
+      <div className="max-w-screen-xl m-auto">{children}</div>
+    </>
+  );
+};
 
+export default Layout;
